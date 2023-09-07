@@ -47,10 +47,10 @@ class HomeCardWidget extends StatelessWidget {
               : [],
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image.asset(
-              url,
-            ),
+            SizedBox(height: 100, child: Image.asset(url)),
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextWidget.inter(
